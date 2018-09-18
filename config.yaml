@@ -30,9 +30,12 @@ menu:
     # - name: Articles
     #   url: /articles/
     #   weight: -180
-    - name: Docs
+    - identifier: docs
+      name: Docs
       url: /docs/
       weight: -160
-    - name: About
+    - identifier: about  
+      name: About
       url: /about/
       weight: '-140'
+      pre: <i class='fa fa-heart'></i>
