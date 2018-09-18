@@ -1,0 +1,32 @@
+<!-- <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+	<div class="mdl-card mdl-cell mdl-cell--12-col mdl-grid">
+		<div class="mdl-card__supporting-text">
+			{{ range first 4 .Site.Pages }}
+			<div class="demo-options mdl-card mdl-color--{{ .Site.Params.mdlSecondary }} mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-desktop">
+				<div class="mdl-card__supporting-text mdl-color-text--blue-grey-50" style="text-align: center;">
+					<a href="{{ .Permalink }}" class="mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">
+						{{ .Title }}
+					</a>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section> -->
+<!-- 
+<nav class="mdl-navigation">
+	{{ range .Site.Menus.main }}
+	<a href="{{ .URL | relURL }}" class="mdl-navigation__link">{{ .Name }}</a>
+	{{ end }}
+</nav>
+-->
+<section class="section--center mdl-grid mdl-grid--no-spacing">
+	<div class="mdl-grid mdl-cell mdl-cell--12-col">Last 4 Articles</div>
+	<div class="mdl-grid mdl-cell mdl-cell--12-col">
+		{{ range first 4 .Site.Pages }}
+		<div class="mdl-cell mdl-cell--3-col mdl-box mdl-color--{{ .Site.Params.mdlSecondary }}">
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</div>
+		{{ end }}
+	</div>
+</section>

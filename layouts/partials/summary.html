@@ -1,0 +1,22 @@
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+	<div class="mdl-card mdl-cell mdl-cell--12-col">
+		<div class="mdl-card__supporting-text">
+			<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+			<!-- <time>{{ .Date.Format "02.01.2006 15:04" }}</time><br> -->
+			{{ range .Params.tags }}
+			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+			{{ end }}
+			<br>
+			{{ .Summary }}
+		</div>
+		<div class="mdl-card__actions">
+			<a href="{{ .Permalink }}" class="mdl-button">Read more...</a>
+		</div>
+	</div>
+</section>
+
+<!-- <div class="mdl-card__actions">
+	{{ if .Truncated }}
+	<a href="{{ .Permalink }}" class="mdl-button">Read more...</a>
+	{{ end }}
+</div> -->

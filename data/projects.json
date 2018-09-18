@@ -1,0 +1,15 @@
+[
+    {
+        "project": "GitOps",
+        "url": "https://github.com/ionutvilie/weaveworks-flux-gitops",
+        "description": "A boilerplate for minikube, with weaveworks flux and two traefik 's managing both incoming ingress and internal kubernetes traffic (path redirection)."
+    },{
+        "project": "Templater",
+        "url": "https://github.com/ionutvilie/templater",
+        "description": "A simple golang cli app that accepts a yaml file as input and applies it over a golang templates folder"
+    },{
+        "project": "URL-Shortener",
+        "url": "https://github.com/metrosystems-cpe/GopherLab/",
+        "description": "URL shortener - app to promote golang inside msys, uses redis-service for key/value storage."
+    }
+]

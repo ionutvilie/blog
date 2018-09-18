@@ -1,0 +1,26 @@
+<header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout--no-desktop-drawer-button">
+
+	<div class="mdl-layout__header-row">
+		<span class="mdl-layout-title">{{ .Site.Title }}</span>
+		<div class="mdl-layout-spacer"></div>
+		<!-- Bottom row, not visible on scroll -->
+		<div class="mdl-layout__header-row mdl-layout--large-screen-only">
+			<div class="mdl-layout-spacer"></div>
+			<!-- Navigation -->
+			<nav class="mdl-navigation">
+				{{ range .Site.Menus.main }}
+				<a href="{{ .URL | relURL }}" class="mdl-navigation__link">{{ .Name }}</a>
+				{{ end }}
+			</nav>
+		</div>
+	</div>
+</header>
+
+<div class="mdl-layout__drawer">
+	<span class="mdl-layout-title">{{ .Site.Title }}</span>
+	<nav class="mdl-navigation">
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL | relURL }}" class="mdl-navigation__link">{{ .Name }}</a>
+		{{ end }}
+	</nav>
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+{{ partial "head.html" . }}
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		{{ partial "header.html" . }}
+		<main class="mdl-layout__content">
+			<div class="page-content">
+
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				</section>
+
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					{{ partial "about.html" . }}
+				</section>
+
+				<section class="mdl-grid mdl-grid--no-spacing">
+					{{ partial "projects.html" . }}
+				</section>
+
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+				</section>
+
+			</div>
+			{{ partial "footer.html" . }}
+
+		</main>
+	</div>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>

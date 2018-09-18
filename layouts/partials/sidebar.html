@@ -1,0 +1,11 @@
+
+<!-- <section class="section--center mdl-grid mdl-grid--no-spacing"> -->
+	<div class="mdl-grid mdl-cell mdl-cell--12-col">Last 4 Articles</div>
+	<div class="mdl-grid mdl-cell mdl-cell--12-col">
+		{{ range first 4 .Site.Pages }}
+		<div class="mdl-cell mdl-cell--3-col mdl-box mdl-color--{{ .Site.Params.mdlSecondary }}">
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</div>
+		{{ end }}
+	</div>
+<!-- </section> -->

@@ -1,0 +1,38 @@
+languageCode: en-us
+title: ionutvilie
+# theme: blank-mdl
+baseurl: 'https://ionutvilie.github.io/'
+MetaDataFormat: yaml
+permalinks:
+  page: '/:title/'
+  about: '/:filename/'
+params:
+  author: Ionut Ilie
+  avatar: /images/avatar.png
+  background: /images/background.jpg
+  description: A place to publish my incomprehensible ramblings
+  image: /images/avatar-192x210.png
+  mdlPrimary: blue_grey
+  mdlSecondary: orange
+  website: example.com
+  email: Firstname@example.com
+  github: 'https://github.com/ionutvilie'
+  twitter: 'https://twitter.com/ionutvilie'
+  linkedin: 'https://linkedin.com/in/ionutvilie/'
+  medium: 'https://medium.com/@ionut.v.ilie'
+  copyrightyear: '2015'
+  frontpageposts: 3
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: -200
+    # - name: Articles
+    #   url: /articles/
+    #   weight: -180
+    - name: Docs
+      url: /docs/
+      weight: -160
+    - name: About
+      url: /about/
+      weight: '-140'

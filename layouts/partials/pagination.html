@@ -1,0 +1,17 @@
+<section class="section mdl-mini-footer mdl-grid">
+	<div class="mdl-grid mdl-mini-footer">
+			<div class="mdl-cell mdl-cell--4-col">
+				{{ if .Paginator.HasPrev }}
+				<a href="{{ .Paginator.Prev.URL }}"><i class="material-icons">arrow_back</i>Previous Page</a>
+				{{ end }}
+			</div>
+			<div class="mdl-cell mdl-cell--4-col">
+				{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+			</div>
+			<div class="mdl-cell mdl-cell--4-col">
+				{{ if .Paginator.HasNext }}
+				<a href="{{ .Paginator.Next.URL }}"><i class="material-icons">arrow_forward</i>Next Page</a>
+				{{ end }}
+			</div>
+		</div>
+</section>
